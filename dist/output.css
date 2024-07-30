@@ -630,10 +630,6 @@ html {
   position: absolute;
 }
 
-.relative{
-  position: relative;
-}
-
 .sticky{
   position: -webkit-sticky;
   position: sticky;
@@ -649,10 +645,6 @@ html {
 
 .right-0{
   right: 0px;
-}
-
-.left-0{
-  left: 0px;
 }
 
 .m-1{
@@ -682,10 +674,6 @@ html {
 
 .hidden{
   display: none;
-}
-
-.h-full{
-  height: 100%;
 }
 
 .h-1{
@@ -763,14 +751,14 @@ html {
   border-style: none;
 }
 
-.bg-pink-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
-}
-
 .bg-zinc-200{
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
+.bg-pink-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r{
@@ -858,10 +846,6 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hover\:bg-white\/10:hover{
-  background-color: rgb(255 255 255 / 0.1);
-}
-
 .hover\:bg-white\/5:hover{
   background-color: rgb(255 255 255 / 0.05);
 }
@@ -873,6 +857,11 @@ html {
 
 .group:hover .group-hover\:block{
   display: block;
+}
+
+.group.open .group-open\:rotate-45{
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 768px){
