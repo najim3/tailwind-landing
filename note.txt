@@ -1,0 +1,2 @@
+> Create a component in input.css when we are not using framework such as 'react.js'
+> vscode multiple selection: hold alt and select multiple item
