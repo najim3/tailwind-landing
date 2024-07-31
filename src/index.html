@@ -16,6 +16,15 @@
             mobileMenuIcon.classList.add("open");
           }
         });
+
+        const ticketMenuItem = document.getElementById("ticket-menu-item");
+        ticketMenuItem.addEventListener("click", () => {
+          if (ticketMenuItem.classList.contains("open")) {
+            ticketMenuItem.classList.remove("open");
+          } else {
+            ticketMenuItem.classList.add("open");
+          }
+        });
       };
     </script>
   </head>
@@ -54,9 +63,22 @@
               <span>Lineup</span>
             </div>
             <div
-              class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 transition-colors hover:bg-white/10 hover:text-zinc-200"
+              id="ticket-menu-item"
+              class="group relative h-full cursor-pointer text-pink-200 transition-colors hover:bg-white/10 hover:text-zinc-200"
             >
-              <span>Tickets</span>
+              <div class="p-4 text-center font-bold">Tickets</div>
+              <div class="hidden group-open:block">
+                <div
+                  class="relative p-4 text-center text-pink-200 transition-colors ease-in-out"
+                >
+                  <span>Single day ticket</span>
+                </div>
+                <div
+                  class="relative p-4 text-center text-pink-200 transition-colors ease-in-out"
+                >
+                  <span>7 day tickets</span>
+                </div>
+              </div>
             </div>
             <div
               class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 transition-colors hover:bg-white/10 hover:text-zinc-200"
